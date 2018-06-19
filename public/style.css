@@ -7,8 +7,122 @@ body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: #c1b5ad;
 }
+@media (max-width: 414px){
+#container{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+#navbar{
+  flex: 1 1 0;
+  background-color: red;
+}
+
+#content{
+  flex: 6 1 0;
+  display: flex;
+  flex-direction: column;
+}
 
 #map {
-  height: 100vh;
-  width: 100vw;
+  flex: 3 1 0;
+}
+
+#option-panel{
+  display: flex;
+  background-color: gray;
+  flex-direction: column;
+  flex: 1 1 0;
+}
+
+#location{
+  background-color: brown;
+  flex: 1 1 0;
+}
+
+#itinerary{
+  background-color: lightgreen;
+  flex: 1 1 0;
+}
+
+/* divider */
+
+/* #container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  #navbar{
+    background-color: red;
+  }
+
+  #content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #content > * {
+    padding: 5%;
+    width: 90%;
+  }
+
+  #map {
+
+  }
+
+  #option-panel{
+    background-color: gray;
+  }
+
+  #location{
+    background-color: brown;
+  }
+
+  #itinerary{
+    background-color: lightgreen;
+  } */
+}
+
+@media (min-width: 414px){
+  #container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #navbar{
+    flex: 1 1 0;
+    background-color: red;
+  }
+
+  #content{
+    flex: 8 1 0;
+    display: flex;
+  }
+
+  #map {
+    flex: 3 1 0;
+  }
+
+  #option-panel{
+    display: flex;
+    background-color: gray;
+    flex-direction: column;
+    flex: 1 1 0;
+  }
+
+  #location{
+    background-color: brown;
+    flex: 1 1 0;
+  }
+
+  #itinerary{
+    background-color: lightgreen;
+    flex: 1 1 0;
+  }
+    
 }
